@@ -12,35 +12,20 @@ module.exports = {
     },
   },
   networks: {
+    sepolia: {
+      url: "https://rpc.ankr.com/eth_sepolia",
+      accounts: [`0x${process.env.PRIVATE_KEY}`], // Ensure you have your private key set in the .env file
+      chainId: 11155111, // Sepolia Chain ID
+    },
     zksync_testnet: {
       url: "https://zksync2-testnet.zksync.dev",
       ethNetwork: "goerli",
       chainId: 280,
       zksync: true,
     },
-    zksync_mainnet: {
-      url: "https://zksync2-mainnet.zksync.io/",
-      ethNetwork: "mainnet",
-      chainId: 324,
-      zksync: true,
-    },
-  },
-  paths: {
-    artifacts: "./artifacts-zk",
-    cache: "./cache-zk",
-    sources: "./contracts",
-    tests: "./test",
   },
   solidity: {
     version: "0.8.17",
-    defaultNetwork: 'sepolia',
-    networks: {
-      hardhat: {},
-      sepolia: {
-        url: 'https://rpc.ankr.com/zksync_era_sepolia',
-        accounts: [`0x${process.env.PRIVATE_KEY}`],
-      }
-    },
     settings: {
       optimizer: {
         enabled: true,
