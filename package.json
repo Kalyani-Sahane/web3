@@ -2,7 +2,7 @@
   "name": "hardhat-javascript-starter",
   "scripts": {
     "build": "npx thirdweb@latest detect",
-    "deploy": "npx thirdweb@latest deploy",
+    "deploy": "npx thirdweb@latest deploy -k mIFNi_C8gm7kzlrxIedl_WDHyUuSuCA1rddHO4cqfmDnFaxtFQGM8AxCrMIwDDfjDyKkB6ISvOFD-8KfHqN1mw",
     "publish": "npx thirdweb@latest publish"
   },
   "devDependencies": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2",
     "@thirdweb-dev/contracts": "^3.8.0",
+    "@thirdweb-dev/sdk": "^4.0.99",
     "dotenv": "^16.4.5",
     "thirdweb": "^5.61.6",
     "zksync-web3": "^0.14.3"
